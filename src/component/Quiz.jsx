@@ -37,6 +37,9 @@ function Quiz() {
                         onChange={handleChange}
                         value={data[index][options]} />
                         <p>{`${options.toUpperCase()} : ${data[index][options]}}`}</p>
+                        <div className='btns'>
+                            <button id='next' onClick={handleNest}>Next</button>
+                        </div>
                       </div>  
                     )
                 }
