@@ -22,7 +22,27 @@ function Quiz() {
                 <button onClick={handleReset}>Play Again</button>
             </div>
         ) : 
-        ()
+        (
+            <div className='question'>
+                <div>
+                  <h2>{index + 1}.{data[index].q}</h2>  
+                </div>
+                {
+                    ['a', 'b', 'c', 'd'].map((options)=>
+                      <div key={options} className='options'>
+                        <input 
+                        className='checked-value'
+                        name='select'
+                        type="radio"
+                        onChange={handleChange}
+                        value={data[index][options]} />
+                        <p>{`${options.toUpperCase()} : ${data[index][options]}}`}</p>
+                      </div>  
+                    )
+                }
+
+            </div>
+        )
     }
       
     </div>
