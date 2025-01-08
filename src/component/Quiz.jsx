@@ -41,8 +41,8 @@ function Quiz() {
             </div>
         ) : 
         (
-            <div className='question'>
-                <div>
+            <div >
+                <div className='question'>
                   <h2>{index + 1}.{data[index].q}</h2>  
                 </div>
                 {
@@ -64,7 +64,7 @@ function Quiz() {
               </div>
             </div>
         )
-    }
+      }
       
     </div>
   )
