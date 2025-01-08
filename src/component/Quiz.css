@@ -1,0 +1,11 @@
+/* Container styling */
+.container {
+    text-align: center;
+    border: 2px solid #444444; /* Added a subtle border for better visibility */
+    margin: 20px; /* Add margin to prevent the container from touching the edges */
+}
+
+
+.score {
+    margin-top: 20px;
+}
