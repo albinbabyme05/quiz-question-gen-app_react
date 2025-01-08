@@ -30,6 +30,20 @@
     align-items: center;
 }
 
+.options {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.options input {
+    margin-right: 10px;
+}
+
+.options p {
+    margin: 0;
+}
+
 .btns {
     margin-top: 20px;
 }
